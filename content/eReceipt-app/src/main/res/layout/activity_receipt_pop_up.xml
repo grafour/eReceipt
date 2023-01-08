@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transparent"
+    tools:context=".ReceiptStuff.ReceiptPopUp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/receiptMadeDate"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center|start"
+            android:text="Date"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/ralewayregular" />
+
+        <TextView
+            android:id="@+id/receiptPrice"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center|start"
+            android:text="$0.00"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/ralewayregular" />
+
+        <ImageView
+            android:id="@+id/receiptImage"
+            android:layout_width="196dp"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/receipt" />
+
+        <TextView
+            android:id="@+id/receiptCompanyName"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center|start"
+            android:text="Company"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:fontFamily="@font/ralewayregular" />
+
+        <TextView
+            android:id="@+id/receiptDueDate"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center|start"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/ralewayregular" />
+
+        <Switch
+            android:id="@+id/enableTimerPopUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:theme="@style/SCBSwitch"
+            android:alpha="0"
+            android:checked="true"
+            android:text="Timer:"
+            app:fontFamily="@font/ralewayregular" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

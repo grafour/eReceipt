@@ -1,0 +1,2 @@
+include ':eReceipt-app'
+rootProject.name='eReceipt'
